@@ -34,6 +34,7 @@ const Landing = () => {
       <Card
         title='Swift'
         description='Unlike any other package manager, Novus uses multithreaded downloads making the download speeds 8 times faster.'
+        imgWidth='30rem'
       />
       <Card
         title='Efficient'

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 5rem;
+  padding: 2rem 6rem;
 }
 
 .left {
@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  margin-left: 5rem;
 }
 
 .title {
@@ -27,6 +28,6 @@
   font-weight: 500;
 }
 
-.image {
+/* .image {
   width: 40rem;
-}
+} */
