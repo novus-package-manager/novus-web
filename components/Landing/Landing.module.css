@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1.78em;
+  gap: 2em;
   background: var(--bg);
 }
 
@@ -20,8 +20,8 @@
   align-items: center;
   font-family: 'Nunito Sans';
   font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.5rem;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 .task {
@@ -37,7 +37,7 @@
   flex-direction: column;
   text-align: center;
   font-family: 'Nunito Sans';
-  font-weight: 00;
+  font-size: 1.2rem;
   color: var(--muted);
 }
 
