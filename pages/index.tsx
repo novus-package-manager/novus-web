@@ -4,7 +4,9 @@ import Navbar from '../components/Navbar/Navbar'
 
 export default function Home() {
   return (
-    <div style={{ height: '100vh', width: '100vw' }}>
+    <div
+      style={{ height: '100vh', width: '100%', backgroundColor: 'var(--bg)' }}
+    >
       <Head>
         <title>Novus</title>
         <meta name='description' content='A package manager for windows' />
