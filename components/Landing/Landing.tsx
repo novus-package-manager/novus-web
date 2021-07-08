@@ -1,14 +1,24 @@
 import styles from './Landing.module.css'
 import Button from '../Button/Button'
 import Card from './Card/Card'
+import TextLoop from 'react-text-loop'
 
 const Landing = () => {
+  const adjectives = ['Install', 'Uninstall', 'Update', 'Manage']
+
   return (
     <div className={styles.screen}>
       <div className={styles.landing}>
         <div className={styles.tagline}>
           <div>
-            <span className={styles.task}>Manage</span> apps
+            <TextLoop interval={2000}>
+              {adjectives.map((word, index) => (
+                <span key={index} className={styles.task}>
+                  {word}
+                </span>
+              ))}
+            </TextLoop>{' '}
+            apps
           </div>
           <span>like a pro</span>
         </div>

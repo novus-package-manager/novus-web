@@ -1,9 +1,9 @@
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   position: absolute;
-  top: 0;
+  top: 1rem;
   left: 0;
   width: 100%;
 }
@@ -13,26 +13,28 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .link {
   color: #7d7d95;
   font-family: 'Nunito Sans';
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
 .signup {
-  right: 2rem;
-  top: 1rem;
-  position: absolute;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo {
   width: 4rem;
   position: fixed;
-  left: 0;
+  left: 10rem;
   top: 0;
   margin: 1rem;
   margin-top: 0.5rem;
