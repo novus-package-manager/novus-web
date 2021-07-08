@@ -1,0 +1,44 @@
+.landing {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.78em;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.task {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right, #7b6ee9, #7a6ee9b6);
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Nunito Sans';
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
