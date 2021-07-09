@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   position: absolute;
   top: 1rem;
@@ -18,17 +18,19 @@
 
 .link {
   color: #7d7d95;
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
   font-size: 1.1rem;
   font-weight: 500;
 }
 
-.signup {
-  margin-right: 2rem;
+.socials {
+  right: 2rem;
+  top: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  position: absolute;
 }
 
 .logo {
