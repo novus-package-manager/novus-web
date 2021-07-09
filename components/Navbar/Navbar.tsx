@@ -5,7 +5,6 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <img src='/logo.png' alt='Logo' className={styles.logo} />
-      <div></div>
       <div className={styles.links}>
         <Link href='/packages'>
           <h5 className={styles.link}>packages</h5>
@@ -17,7 +16,7 @@ const Navbar = () => {
           <h5 className={styles.link}>contribute</h5>
         </Link>
       </div>
-      <div className={styles.signup}>
+      <div className={styles.socials}>
         <a href='https://github.com/novus-package-manager'>
           <img src='/links/github.svg' alt='Github' />
         </a>
