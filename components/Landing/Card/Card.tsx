@@ -1,43 +1,41 @@
-import { useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import styles from "./Card.module.css";
-import { motion } from "framer-motion"
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
+import styles from './Card.module.css'
 interface CardProps {
-  title: string;
-  description: string;
-  imgWidth?: string;
-  left: boolean;
+  title: string
+  description: string
+  imgWidth?: string
+  left: boolean
 }
+
 function FadeInWhenVisible({ children }) {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
 
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controls.start('visible')
     }
-  }, [controls, inView]);
+  }, [controls, inView])
 
   return (
     <motion.div
       ref={ref}
       animate={controls}
-      initial="hidden"
+      initial='hidden'
       transition={{ duration: 0.3 }}
       variants={{
         visible: { opacity: 1, scale: 1 },
-        hidden: { opacity: 0, scale: 0 }
+        hidden: { opacity: 0, scale: 0 },
       }}
     >
       {children}
     </motion.div>
-  );
+  )
 }
 
-const Card = ({ title, description, imgWidth = "37rem", left }: CardProps) => {
-
-
+const Card = ({ title, description, imgWidth = '37rem', left }: CardProps) => {
   if (left) {
     return (
       <FadeInWhenVisible>
@@ -54,7 +52,7 @@ const Card = ({ title, description, imgWidth = "37rem", left }: CardProps) => {
           />
         </div>
       </FadeInWhenVisible>
-    );
+    )
   } else {
     return (
       <FadeInWhenVisible>
@@ -69,9 +67,10 @@ const Card = ({ title, description, imgWidth = "37rem", left }: CardProps) => {
             <h2 className={styles.title}>{title}</h2>
             <h5 className={styles.description}>{description}</h5>
           </div>
-        </div></FadeInWhenVisible>
-    );
+        </div>
+      </FadeInWhenVisible>
+    )
   }
-};
+}
 
-export default Card;
+export default Card
