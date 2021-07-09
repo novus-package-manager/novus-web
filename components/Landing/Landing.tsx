@@ -9,32 +9,29 @@ const Landing = () => {
   return (
     <div className={styles.screen}>
       <div className={styles.landing}>
-        {/* <Fade right collapse> */}
-        <div className={styles.tagline}>
-          <div>
-            <TextLoop interval={2000}>
-              {adjectives.map((word, index) => (
-                <span key={index} className={styles.task}>
-                  {word}
-                </span>
-              ))}
-            </TextLoop>{' '}
-            apps
+        <Fade right collapse>
+          <div className={styles.tagline}>
+            <div>
+              <TextLoop interval={2000}>
+                {adjectives.map((word, index) => (
+                  <span key={index} className={styles.task}>
+                    {word}
+                  </span>
+                ))}
+              </TextLoop>{' '}
+              apps
+            </div>
+            <span>like a pro</span>
           </div>
-          <span>like a pro</span>
-        </div>
-        {/* </Fade> */}
-
-        {/* <Fade left collapse> */}
-        <div className={styles.description}>
-          A blazingly fast and efficient package manager
-          <span>for windows.</span>
-        </div>
-        <div className={styles.buttons}>
-          <Button text='Get Started' type='secondary' />
-          <Button text='Discover Packages' type='primary' />
-        </div>
-        {/* </Fade> */}
+          <div className={styles.description}>
+            A blazingly fast and efficient package manager
+            <span>for windows.</span>
+          </div>
+          <div className={styles.buttons}>
+            <Button text='Get Started' type='secondary' />
+            <Button text='Discover Packages' type='primary' />
+          </div>
+        </Fade>
       </div>
       <Card
         title='Swift'
