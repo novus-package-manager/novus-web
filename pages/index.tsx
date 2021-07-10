@@ -20,7 +20,7 @@ export default function Home() {
             crossOrigin=''
           />
         </Head>
-        <Navbar />
+        <Navbar page='home' />
         <Landing />
       </div>
     </div>
