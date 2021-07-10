@@ -24,10 +24,10 @@ const Navbar = (props: NavbarProps) => {
         <Link href='/packages'>
           <h5 className={styles.link}>packages</h5>
         </Link>
-        <Link href='/docs'>
+        <a href='https://docs.novuspkg.com/docs/intro'>
           <h5 className={styles.link}>docs</h5>
-        </Link>
-        <Link href='/contribute'>
+        </a>
+        <Link href='/'>
           <h5 className={styles.link}>contribute</h5>
         </Link>
       </div>
