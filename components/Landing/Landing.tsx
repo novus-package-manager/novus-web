@@ -49,7 +49,9 @@ const Landing = () => {
             duration: 0.4,
           }}
         >
-          <Button text='Get Started' type='secondary' />
+          <a href='https://docs.novuspkg.com/docs/intro'>
+            <Button text='Get Started' type='secondary' />
+          </a>
           <ButtonLink
             text='Discover Packages'
             href='/packages'
