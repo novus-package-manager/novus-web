@@ -35,7 +35,7 @@ function Page({ pkgName }) {
     pkg = data
   }
 
-  // console.log('pkg: ', pkg)
+  // console.log('alias: ', pkg.alias)
 
   if (pkg !== undefined) {
     return (
@@ -52,7 +52,13 @@ function Page({ pkgName }) {
       >
         <Package
           key={pkg.package_name}
-          name={pkg.display_name ? pkg.display_name : 'loading'}
+          name={
+            pkg.display_name
+              ? pkg.alias
+                ? pkg.alias
+                : pkg.display_name
+              : 'loading'
+          }
           creator={pkg.creator ? pkg.creator : 'loading'}
           description={pkg.description ? pkg.description : 'loading'}
           package_name={pkg.package_name ? pkg.package_name : 'loading'}
