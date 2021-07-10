@@ -1,0 +1,169 @@
+.packages_screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  margin-top: 7rem;
+}
+
+.package_card {
+  width: 83.333333%;
+  max-width: 83.333333%;
+  height: 10rem;
+  background-color: var(--lightblue);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.75rem;
+  margin-top: 2rem;
+}
+
+.header {
+  width: 83.333333%;
+  height: 20rem;
+  background-color: var(--lightblue);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  color: black;
+  font-family: 'Nunito Sans';
+  font-size: 3rem;
+  line-height: 1.375;
+}
+
+.header .description_1 {
+  color: var(--darkgrey);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+}
+
+.header .description_2 {
+  color: var(--darkgrey);
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+}
+
+.searchbar {
+  width: 75%;
+  height: 3.5rem;
+  background-color: var(--bluegrey);
+  border-radius: 0.75rem;
+  margin-top: -1.75rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.searchicon {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-left: 1.25rem;
+}
+
+.searchinput::placeholder {
+  color: var(--lightgrey);
+}
+
+.searchinput {
+  color: var(--lightgrey);
+  font-family: 'Nunito Sans';
+  background-color: var(--bluegrey);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-left: 0.75rem;
+  outline: none;
+  width: 100%;
+  border: 0px;
+}
+
+.pagination {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 2rem 0px;
+  user-select: none;
+}
+
+.pagination .prev {
+  height: 100%;
+  padding-right: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bluegrey);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.pagination .prev .icon {
+  color: white;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  padding-top: 0.25rem;
+}
+
+.pagination .prev p {
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.pagination .page {
+  height: 100%;
+  padding: 0px 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bluegrey);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.pagination .page p {
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.pagination .next {
+  height: 100%;
+  padding-left: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bluegrey);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.pagination .next .icon {
+  color: white;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  padding-top: 0.25rem;
+}
+
+.pagination .next p {
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}

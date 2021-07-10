@@ -1,10 +1,23 @@
 import styles from './Navbar.module.css'
 import Link from 'next/link'
 
-const Navbar = () => {
+interface NavbarProps {
+  fixed?: boolean
+  page: string
+}
+
+const Navbar = (props: NavbarProps) => {
   return (
     <div className={styles.navbar}>
-      <img src='/logo.png' alt='Logo' className={styles.logo} />
+      <img
+        src='/logo.png'
+        alt='Logo'
+        className={styles.logo}
+        style={{
+          position: props.fixed ? 'fixed' : 'absolute',
+          marginTop: props.fixed ? '0.5rem' : '-0.5rem',
+        }}
+      />
       <div className={styles.links}>
         <Link href='/packages'>
           <h5 className={styles.link}>packages</h5>

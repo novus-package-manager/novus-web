@@ -1,0 +1,21 @@
+.button {
+  appearance: none;
+  padding: 0.5rem 0px;
+  border-width: 0px;
+  cursor: pointer;
+  outline: 0;
+  background-color: transparent;
+}
+
+.clipboard {
+  position: relative;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.icon {
+  color: #d3dadc;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
