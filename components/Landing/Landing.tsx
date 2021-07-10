@@ -1,8 +1,9 @@
 import styles from './Landing.module.css'
-import Button from '../Button/Button'
+import { ButtonLink, Button } from '../Button/Button'
 import Card from './Card/Card'
 import TextLoop from 'react-text-loop'
 import { motion } from 'framer-motion'
+
 const Landing = () => {
   const adjectives = ['Install', 'Uninstall', 'Update', 'Manage']
 
@@ -48,8 +49,14 @@ const Landing = () => {
             duration: 0.4,
           }}
         >
-          <Button text='Get Started' type='secondary' />
-          <Button text='Discover Packages' type='primary' />
+          <a href='https://docs.novuspkg.com/docs/intro'>
+            <Button text='Get Started' type='secondary' />
+          </a>
+          <ButtonLink
+            text='Discover Packages'
+            href='/packages'
+            type='primary'
+          />
         </motion.div>
       </div>
       <Card

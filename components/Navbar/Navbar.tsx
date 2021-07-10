@@ -9,23 +9,25 @@ interface NavbarProps {
 const Navbar = (props: NavbarProps) => {
   return (
     <div className={styles.navbar}>
-      <img
-        src='/logo.png'
-        alt='Logo'
-        className={styles.logo}
-        style={{
-          position: props.fixed ? 'fixed' : 'absolute',
-          marginTop: props.fixed ? '0.5rem' : '-0.5rem',
-        }}
-      />
+      <Link href='/'>
+        <img
+          src='/logo.png'
+          alt='Logo'
+          className={styles.logo}
+          style={{
+            position: props.fixed ? 'fixed' : 'absolute',
+            marginTop: props.fixed ? '0.5rem' : '-0.5rem',
+          }}
+        />
+      </Link>
       <div className={styles.links}>
         <Link href='/packages'>
           <h5 className={styles.link}>packages</h5>
         </Link>
-        <Link href='/docs'>
+        <a href='https://docs.novuspkg.com/docs/intro'>
           <h5 className={styles.link}>docs</h5>
-        </Link>
-        <Link href='/contribute'>
+        </a>
+        <Link href='/'>
           <h5 className={styles.link}>contribute</h5>
         </Link>
       </div>

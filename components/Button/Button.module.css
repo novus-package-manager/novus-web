@@ -7,19 +7,23 @@
   border-radius: 40px;
   cursor: pointer;
 }
+
 .secondary {
   background-color: var(--secondary);
   border-radius: 20px;
   transition: all 0.3s;
 }
+
 .primary {
   background-color: var(--primary);
   border-radius: 20px;
   transition: all 0.3s;
 }
+
 .primary:hover {
   background-color: rgb(64, 61, 240);
 }
+
 .secondary:hover {
   background-color: rgb(233, 90, 23);
 }
