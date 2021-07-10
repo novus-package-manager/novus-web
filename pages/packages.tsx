@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar/Navbar'
 import { FaSearch } from 'react-icons/fa'
-import Package from '../components/Package/package'
+import Package from '../components/Package/Package'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import useSWR from 'swr'
