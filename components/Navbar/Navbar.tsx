@@ -9,15 +9,17 @@ interface NavbarProps {
 const Navbar = (props: NavbarProps) => {
   return (
     <div className={styles.navbar}>
-      <img
-        src='/logo.png'
-        alt='Logo'
-        className={styles.logo}
-        style={{
-          position: props.fixed ? 'fixed' : 'absolute',
-          marginTop: props.fixed ? '0.5rem' : '-0.5rem',
-        }}
-      />
+      <Link href='/'>
+        <img
+          src='/logo.png'
+          alt='Logo'
+          className={styles.logo}
+          style={{
+            position: props.fixed ? 'fixed' : 'absolute',
+            marginTop: props.fixed ? '0.5rem' : '-0.5rem',
+          }}
+        />
+      </Link>
       <div className={styles.links}>
         <Link href='/packages'>
           <h5 className={styles.link}>packages</h5>
