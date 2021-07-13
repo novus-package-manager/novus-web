@@ -41,3 +41,16 @@
   top: 0rem;
   cursor: pointer;
 }
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: var(--primary);
+  padding: 0.5rem 2rem;
+  color: white;
+  font-family: 'Nunito Sans';
+  margin-left: 4rem;
+  cursor: pointer;
+}

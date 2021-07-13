@@ -41,6 +41,7 @@ const Navbar = (props: NavbarProps) => {
         <a href='https://discord.gg/5m7sKh4X'>
           <img src='/links/discord.svg' alt='Discord' />
         </a>
+        <a className={styles.download} href="https://github.com/novus-package-manager/novus/releases/download/v1.0.0/Novus.v1.0.0.Setup.exe">Download</a>
       </div>
     </div>
   )
