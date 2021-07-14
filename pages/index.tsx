@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Landing from '../components/Landing/Landing'
 import Navbar from '../components/Navbar/Navbar'
-import { motion, useViewportScroll } from 'framer-motion'
 
 export default function Home() {
   return (
