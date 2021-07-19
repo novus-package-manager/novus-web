@@ -3,7 +3,8 @@ import { ButtonLink, Button } from '../Button/Button'
 import Card from './Card/Card'
 import TextLoop from 'react-text-loop'
 import { motion } from 'framer-motion'
-
+import Link from "next/link"
+import { AiFillWindows } from "react-icons/ai";
 const Landing = () => {
   const adjectives = ['Install', 'Uninstall', 'Update', 'Manage']
 
@@ -75,6 +76,30 @@ const Landing = () => {
         description='Not only are all of Novus’s packages are monitored regularly, but all of them are always up to date and trusted by the community.'
         left={false}
       />
+      <div className={styles.footer}>
+        <Link href='/'>
+          <img
+            src='/logo.png'
+            alt='Logo'
+            className={styles.logo}
+          />
+        </Link>
+        <div className={styles.social}>
+          <a href='https://github.com/novus-package-manager'>
+            <img src='/links/github.svg' alt='Github' />
+          </a>
+          <a href='https://twitter.com/ZaphodElevated'>
+            <img src='/links/twitter.svg' alt='Twitter' />
+          </a>
+          <a href='https://discord.gg/5m7sKh4X'>
+            <img src='/links/discord.svg' alt='Discord' />
+          </a>
+        </div>
+        <div className="download">
+          <AiFillWindows />
+          <a className={styles.download} href="https://github.com/novus-package-manager/novus/releases/download/v1.0.0/Novus.v1.0.0.Setup.exe"> Download for windows</a>
+        </div>
+      </div>
     </div>
   )
 }

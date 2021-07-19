@@ -30,6 +30,10 @@
   background-image: linear-gradient(to right, #7b6ee9, #7a6ee9b6);
 }
 
+.social a{
+  margin: 10px;
+}
+
 .description {
   display: flex;
   justify-content: center;
@@ -40,10 +44,23 @@
   font-size: 1.2rem;
   color: var(--muted);
 }
-
+.logo {
+  width: 4rem;
+  left: 10rem;
+  top: 0rem;
+  cursor: pointer;
+}
 .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+.footer{
+    border-top: 1px solid #dedede;
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
 }
