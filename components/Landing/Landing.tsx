@@ -91,7 +91,7 @@ const Landing = () => {
           <a href='https://twitter.com/ZaphodElevated'>
             <img src='/links/twitter.svg' alt='Twitter' />
           </a>
-          <a href='https://discord.gg/5m7sKh4X'>
+          <a href='https://discord.gg/AAZpP8HzZF'>
             <img src='/links/discord.svg' alt='Discord' />
           </a>
         </div>
