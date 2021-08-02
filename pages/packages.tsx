@@ -120,6 +120,7 @@ const Packages = ({ package_list }) => {
 
   return (
     <>
+      <div className={styles.nav}></div>
       <div className={styles.packages_screen}>
         <Navbar page='packages' />
         <div className={styles.header}>
@@ -168,7 +169,7 @@ const Packages = ({ package_list }) => {
             </div>
           </Link>
           <Link href={`/packages?page=${page + 3}`}>
-            <div className={styles.page}>
+            <div className={styles.page} id={styles.page3}>
               <p>{page + 3}</p>
             </div>
           </Link>
