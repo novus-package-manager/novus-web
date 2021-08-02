@@ -176,3 +176,33 @@
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .header .description_1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .header .description_2 {
+    font-size: 1.2rem;
+  }
+  
+  .searchbar {
+    width: 65%;
+    height: 3rem;
+  }
+
+  .pagination {
+    gap: 1rem;
+  }
+
+  #page3 {
+    display: none;
+  }
+}
