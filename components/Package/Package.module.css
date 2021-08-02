@@ -104,7 +104,7 @@
     width: 100%;
     margin-left: 0.5rem;
     margin-bottom: 1rem;
-    overflow: auto;
+    overflow: hidden;
   }
   
   .name {
@@ -137,6 +137,7 @@
     justify-content: space-between;
     align-items: center;
     width: 180%;
+    overflow: hidden;
   }
   
   .description h5 {
