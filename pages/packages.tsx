@@ -120,6 +120,7 @@ const Packages = ({ package_list }) => {
 
   return (
     <>
+      <div className={styles.nav}></div>
       <div className={styles.packages_screen}>
         <Navbar page='packages' />
         <div className={styles.header}>

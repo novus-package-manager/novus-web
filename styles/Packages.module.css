@@ -9,6 +9,15 @@
   margin-top: 7rem;
 }
 
+.nav {
+  width: 100%;
+  min-height: 7rem;
+  background: var(--bg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .package_card {
   width: 83.333333%;
   max-width: 83.333333%;
