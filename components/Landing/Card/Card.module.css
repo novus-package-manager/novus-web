@@ -28,6 +28,29 @@
   font-weight: 500;
 }
 
-/* .image {
-  width: 40rem;
-} */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .card {
+    padding: 0;    
+    padding-bottom: 3rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .left {
+    margin: 0;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;    
+  }
+}

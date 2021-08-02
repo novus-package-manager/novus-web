@@ -39,8 +39,7 @@ const Landing = () => {
             duration: 0.4,
           }}
         >
-          A blazingly fast and efficient package manager
-          <span>for windows.</span>
+          A blazingly fast and efficient package manager for windows. 
         </motion.div>
         <motion.div
           className={styles.buttons}
@@ -95,7 +94,7 @@ const Landing = () => {
             <img src='/links/discord.svg' alt='Discord' />
           </a>
         </div>
-        <div className="download">
+        <div className={styles.footerDownload}>
           <AiFillWindows />
           <a className={styles.download} href="https://github.com/novus-package-manager/novus/releases/download/v1.0.0/Novus.v1.0.0.Setup.exe"> Download for windows</a>
         </div>
