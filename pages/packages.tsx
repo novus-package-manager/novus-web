@@ -127,9 +127,9 @@ const Packages = ({ package_list }) => {
           <h1>Discover Trusted</h1>
           <h1>Community Packages</h1>
           <h2 className={styles.description_1}>
-            Find thousands of community packages and install them with
+            Find thousands of community packages and install them with just a
+            single command.
           </h2>
-          <h2 className={styles.description_2}>just a single command.</h2>
         </div>
         <div className={styles.searchbar}>
           <FaSearch className={styles.searchicon} />
