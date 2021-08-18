@@ -1,6 +1,6 @@
 import styles from './Navbar.module.css'
 import Link from 'next/link'
-import { AiFillWindows } from "react-icons/ai";
+import { AiFillWindows } from 'react-icons/ai'
 interface NavbarProps {
   fixed?: boolean
   page: string
@@ -27,16 +27,18 @@ const Navbar = (props: NavbarProps) => {
         <a href='https://docs.novuspkg.com/docs/intro'>
           <h5 className={styles.link}>docs</h5>
         </a>
-        <Link href='/'>
+        <a href='https://github.com/novus-package-manager/novus'>
           <h5 className={styles.link}>contribute</h5>
-        </Link>
+        </a>
       </div>
       <div className={styles.socials}>
-
-        <a className={styles.download} href="https://github.com/novus-package-manager/novus/releases/download/v1.0.0/Novus.v1.0.0.Setup.exe">
+        <a
+          className={styles.download}
+          href='https://github.com/novus-package-manager/novus/releases/download/v1.0.0/Novus.v1.0.0.Setup.exe'
+        >
           <AiFillWindows />
-          &nbsp;
-          Download</a>
+          &nbsp; Download
+        </a>
       </div>
     </div>
   )
