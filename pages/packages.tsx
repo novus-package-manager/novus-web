@@ -147,7 +147,11 @@ const Packages = ({ package_list }) => {
             className={styles.searchinput}
           />
         </div>
-        {pages}
+        {package_list.length > 0 ? (
+          pages
+        ) : (
+          <p className={styles.no_packages}>No Packages Found!</p>
+        )}
         <div className={styles.pagination}>
           <Link href={`/packages?page=${page - 1}`}>
             <div className={styles.prev}>
