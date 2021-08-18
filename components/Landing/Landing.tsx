@@ -3,8 +3,8 @@ import { ButtonLink, Button } from '../Button/Button'
 import Card from './Card/Card'
 import TextLoop from 'react-text-loop'
 import { motion } from 'framer-motion'
-import Link from "next/link"
-import { AiFillWindows } from "react-icons/ai";
+import Link from 'next/link'
+import { AiFillWindows } from 'react-icons/ai'
 const Landing = () => {
   const adjectives = ['Install', 'Uninstall', 'Update', 'Manage']
 
@@ -39,7 +39,7 @@ const Landing = () => {
             duration: 0.4,
           }}
         >
-          A blazingly fast and efficient package manager for windows. 
+          A blazingly fast and efficient package manager for windows.
         </motion.div>
         <motion.div
           className={styles.buttons}
@@ -77,11 +77,7 @@ const Landing = () => {
       />
       <div className={styles.footer}>
         <Link href='/'>
-          <img
-            src='/logo.png'
-            alt='Logo'
-            className={styles.logo}
-          />
+          <img src='/logo.png' alt='Logo' className={styles.logo} />
         </Link>
         <div className={styles.social}>
           <a href='https://github.com/novus-package-manager'>
@@ -94,10 +90,23 @@ const Landing = () => {
             <img src='/links/discord.svg' alt='Discord' />
           </a>
         </div>
-        <div className={styles.footerDownload}>
+        {/* <div className={styles.footerDownload}>
           <AiFillWindows />
           <a className={styles.download} href="https://github.com/novus-package-manager/novus/releases/download/v1.0.0/Novus.v1.0.0.Setup.exe"> Download for windows</a>
-        </div>
+        </div> */}
+        <a
+          href='https://www.producthunt.com/posts/novus-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-novus-2'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <img
+            src='https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=308940&theme=dark'
+            alt='Novus - A blazingly fast open-source package manager for windows. | Product Hunt'
+            style={{ width: '250px', height: '54px' }}
+            width='250'
+            height='54'
+          />
+        </a>
       </div>
     </div>
   )
