@@ -34,7 +34,7 @@ const Navbar = (props: NavbarProps) => {
       <div className={styles.socials}>
         <a
           className={styles.download}
-          href='https://github.com/novus-package-manager/novus/releases/download/v1.0.0/Novus.v1.0.0.Setup.exe'
+          href='https://github.com/novus-package-manager/novus/releases/download/v1.1.1/Novus.v1.1.1.Alpha.Setup.exe'
         >
           <AiFillWindows />
           &nbsp; Download
