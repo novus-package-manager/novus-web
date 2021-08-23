@@ -39,7 +39,7 @@ const Landing = () => {
             duration: 0.4,
           }}
         >
-          A blazingly fast and efficient package manager for windows.
+          A blazingly fast and futuristic package manager for windows.
         </motion.div>
         <motion.div
           className={styles.buttons}
