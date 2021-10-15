@@ -21,7 +21,7 @@ function Page({ pkgName }) {
   // console.log('name: ', pkgName)
 
   const { data, error } = useSWR(
-    `/${pkgName}.json?a=${Math.round(Date.now() / 1000)}`,
+    `/packages_v2/${pkgName}.json?a=${Math.round(Date.now() / 1000)}`,
     fetcher
   )
 
@@ -191,7 +191,7 @@ const Packages = ({ package_list }) => {
 
 export async function getStaticProps() {
   const packagelist_res = await fetch(
-    `https://storage.googleapis.com/novus_bucket/package-list/package-list.json?a=${Math.round(
+    `https://storage.googleapis.com/novus_bucket/packages_v2/package-list/package-list.json?a=${Math.round(
       Date.now() / 1000
     )}`
   )
